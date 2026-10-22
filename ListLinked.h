@@ -102,10 +102,10 @@ class ListLinked : public List<T> {
         }
 
         friend std::ostream& operator<<(std::ostream &out, ListLinked<T> &list) {
-            out << "LIST => [";
+            out << "LIST =[";
             Node<T>* aux = list.first;
             while (aux != nullptr) {
-                out << "\n  " << aux->data;
+                out << "\n " << aux->data;
                 aux = aux->next;
             }
             out << "\n]";
